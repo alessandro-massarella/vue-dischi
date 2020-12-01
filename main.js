@@ -4,7 +4,6 @@ const myApp = new Vue ({
   data: {
     records: [],
     url: "https://flynn.boolean.careers/exercises/api/array/music",
-
   },
 
   mounted: function() {
@@ -13,8 +12,8 @@ const myApp = new Vue ({
             .get (this.url)
             .then ((response)=> {
 
-              this.records = [response.data]
-              console.log(this.records)
+              this.records = response.data.response
+              console.log(response)
             })
 
 
