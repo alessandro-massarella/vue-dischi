@@ -15,7 +15,5 @@ const myApp = new Vue ({
               this.records = response.data.response
               console.log(response)
             })
-
-
-  }
+  },
 });

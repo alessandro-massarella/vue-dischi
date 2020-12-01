@@ -10,13 +10,14 @@
 
     </head>
     <body>
+      <div id="myApp">
         <header>
             <div class="container">
                 <img src="logo.png" alt="logo" />
             </div>
         </header>
 
-        <div id="myApp" class="cds-container container">
+        <div class="cds-container container">
             <!-- Disco ad esempio -->
             <div class="cd" v-for="record in records">
                 <img :src="record.poster" alt="record cover">
@@ -25,8 +26,7 @@
                 <span class="year">{{ record.year}}</span>
             </div>
         </div>
-
-
         <script src="main.js" charset="utf-8"></script>
+      </div>
     </body>
 </html>
